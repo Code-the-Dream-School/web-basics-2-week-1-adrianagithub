@@ -7,7 +7,7 @@
  * Example Output: "hello world"
  */
 
-console.log('hello world')
+
 
 /* Challenge #1
  * Create a variable and print the value
@@ -20,7 +20,7 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+var hola = console.log('hello world');
 /* Challenge #2
  * Create variables for your first and last name then print your full name
  *
@@ -33,6 +33,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var firstName="Adriana";
+var lastName="Cabrera";
+console.log (firstName + " " +lastName);
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -45,8 +48,14 @@ console.log('hello world')
  *
  * Example Output: "$49.90"
  */
+ var price = 5.98;
+ var quantity = 4;
+ var total = price * quantity;
+ console.log(Math.round(total));
 
 // TODO: ADD CODE HERE
+
+
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -61,8 +70,19 @@ console.log('hello world')
  *
  * Example Output: "Aww! It's not sunny outside"
  */
-
 // TODO: ADD CODE HERE
+var weather ="Sunny";
+weather.toLowerCase;
+var message =String;
+if (weather = "sunny")
+{
+    message= "Yay! It's sunny outside";   
+}
+else 
+{
+    message= "Aww! It's not sunny outside";
+}
+console.log (message);
 
 /* Challenge #5
  * Create a function that returns any string
@@ -76,7 +96,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+function myFunction () {
+    return "Have a good day";
+}
+console.log (myFunction());
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -85,11 +108,17 @@ console.log('hello world')
  * 2. Add a return statement in your function which returns a random string
  * 3. Use `console.log` to print out the output of `myArrowFunction()`
  *
- * Example Output: "I called an arrow function!"
- */
-
 // TODO: ADD CODE HERE
-
+*/
+function arrfruta() {
+    var cadena='';
+    const arrfruta= ["mango", "fresa", "durazno","berries"]; 
+    arrfruta.forEach(element => {
+        cadena += element + " "
+    });
+    return cadena;
+}
+console.log ("Frutas favoritas:"+ arrfruta());
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
  *
@@ -100,8 +129,14 @@ console.log('hello world')
  * 4. Use `console.log` to print out the output of `stringToUpper(str)`
  *
  * Example Output: "WHY AM I SCREAMING"
+ * 
  */
-
+ par1 ="stringaconvertir";
+ function stringToUpper(par1){
+    console.log(par1); 
+    return (par1.toUpperCase());
+ }
+console.log (stringToUpper(par1));
 // TODO: ADD CODE HERE
 
 /* Challenge #8
@@ -120,3 +155,14 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function multiplyByTwo(num){
+        multiple = num*2;
+        return multiple;
+     }
+     num1= multiplyByTwo(1);
+     num2= multiplyByTwo(5);
+     num3= multiplyByTwo(10);
+     console.log(num1);
+     console.log(num2);
+     console.log(num3);
+     console.log (num1+num2+num3);//sum of the 3
